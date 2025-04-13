@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La boulangerie du P'tit chef | Lachute QC</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.jpg" alt="La boulangerie du P'tit chef" class="logo-image"></a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Accueil</a></li>
+                    <li><a href="#about" class="nav-link">À propos</a></li>
+                    <li><a href="#products" class="nav-link">Nos produits</a></li>
+                    <li><a href="#hours" class="nav-link">Horaires</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bienvenue à La boulangerie du P'tit chef</h1>
+                <p>Des pains et pâtisseries artisanales préparés avec passion à Lachute, Québec</p>
+                <a href="#products" class="btn btn-primary">Découvrir nos produits</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre histoire</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/felix.jpg" alt="Intérieur de la boulangerie">
+                </div>
+                <div class="about-text">
+                    <h3>Une histoire de qualité</h3>
+                    <p>La boulangerie du P'tit chef est une boulangerie artisanale située au cœur de Lachute. Depuis notre ouverture, nous nous engageons à offrir des produits de boulangerie et de pâtisserie de la plus haute qualité, préparés chaque jour avec des ingrédients frais et locaux.</p>
+                    <p>Notre équipe de boulangers passionnés travaille avec dévouement pour créer des délices qui ravissent les papilles de notre communauté. Chaque pain, viennoiserie et pâtisserie est façonné à la main selon des méthodes traditionnelles.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3,767</span>
+                            <span class="stat-text">Clients satisfaits</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-text">Produits différents</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-text">Fait main</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos produits</h2>
+                <div class="divider"></div>
+                <p>Découvrez notre sélection de produits artisanaux préparés chaque jour avec amour</p>
+            </div>
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all">Tous</button>
+                <button class="category-btn" data-category="bread">Pains</button>
+                <button class="category-btn" data-category="pastry">Viennoiseries</button>
+                <button class="category-btn" data-category="dessert">Pâtisseries</button>
+                <button class="category-btn" data-category="specialty">Spécialités</button>
+            </div>
+            <div class="products-grid">
+                <!-- Pains -->
+                <div class="product-card" data-category="bread">
+                    <div class="product-image">
+                        <img src="images/bakery.jpg" alt="Baguette traditionnelle">
+                    </div>
+                    <div class="product-info">
+                        <h3>Baguette Traditionnelle</h3>
+                        <p>Notre baguette croustillante à l'extérieur et moelleuse à l'intérieur.</p>
+                        <span class="price">$3.50</span>
+                    </div>
+                </div>
+                <div class="product-card" data-category="bread">
+                    <div class="product-image">
+                        <img src="images/bakery.jpg" alt="Baguette traditionnelle">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pain au Levain</h3>
+                        <p>Pain rustique à la croûte épaisse et à la mie aérée.</p>
+                        <span class="price">$5.75</span>
+                    </div>
+                </div>
+                <!-- Viennoiseries -->
+                <div class="product-card" data-category="pastry">
+                    <div class="product-image">
+                        <img src="images/bakery.jpg" alt="Baguette traditionnelle">
+                    </div>
+                    <div class="product-info">
+                        <h3>Croissant au Beurre</h3>
+                        <p>Feuilleté, croustillant et préparé avec du beurre de qualité.</p>
+                        <span class="price">$2.95</span>
+                    </div>
+                </div>
+                <div class="product-card" data-category="pastry">
+                    <div class="product-image">
+                        <img src="images/bakery.jpg" alt="Baguette traditionnelle">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pain au Chocolat</h3>
+                        <p>Viennoiserie feuilletée garnie de chocolat noir.</p>
+                        <span class="price">$3.25</span>
+                    </div>
+                </div>
+                <!-- Pâtisseries -->
+                <div class="product-card" data-category="dessert">
+                    <div class="product-image">
+                        <img src="images/bakery.jpg" alt="Baguette traditionnelle">
+                    </div>
+                    <div class="product-info">
+                        <h3>Éclair au Chocolat</h3>
+                        <p>Pâte à choux garnie de crème pâtissière au chocolat.</p>
+                        <span class="price">$4.50</span>
+                    </div>
+                </div>
+                <div class="product-card" data-category="dessert">
+                    <div class="product-image">
+                        <img src="images/bakery.jpg" alt="Baguette traditionnelle">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tarte aux Pommes</h3>
+                        <p>Tarte garnie de pommes fraîches et de cannelle.</p>
+                        <span class="price">$18.95</span>
+                    </div>
+                </div>
+                <!-- Spécialités -->
+                <div class="product-card" data-category="specialty">
+                    <div class="product-image">
+                        <img src="images/bakery.jpg" alt="Baguette traditionnelle">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fougasse aux Herbes</h3>
+                        <p>Pain plat provençal parfumé aux herbes de Provence.</p>
+                        <span class="price">$4.95</span>
+                    </div>
+                </div>
+                <div class="product-card" data-category="specialty">
+                    <div class="product-image">
+                        <img src="images/bakery.jpg" alt="Baguette traditionnelle">
+                    </div>
+                    <div class="product-info">
+                        <h3>Brioche à la Fleur d'Oranger</h3>
+                        <p>Brioche moelleuse parfumée à la fleur d'oranger.</p>
+                        <span class="price">$6.50</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hours" class="hours-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos horaires</h2>
+                <div class="divider"></div>
+                <p>Venez nous rendre visite et découvrir nos produits frais</p>
+            </div>
+            <div class="hours-content">
+                <div class="hours-card">
+                    <div class="day-group">
+                        <div class="day-item closed">
+                            <span class="day">Dimanche</span>
+                            <span class="hours">Fermé</span>
+                        </div>
+                        <div class="day-item closed">
+                            <span class="day">Lundi</span>
+                            <span class="hours">Fermé</span>
+                        </div>
+                        <div class="day-item">
+                            <span class="day">Mardi</span>
+                            <span class="hours">6:00 - 17:00</span>
+                        </div>
+                        <div class="day-item">
+                            <span class="day">Mercredi</span>
+                            <span class="hours">6:00 - 17:00</span>
+                        </div>
+                        <div class="day-item">
+                            <span class="day">Jeudi</span>
+                            <span class="hours">6:00 - 17:00</span>
+                        </div>
+                        <div class="day-item">
+                            <span class="day">Vendredi</span>
+                            <span class="hours">6:00 - 17:00</span>
+                        </div>
+                        <div class="day-item weekend">
+                            <span class="day">Samedi</span>
+                            <span class="hours">8:00 - 17:00</span>
+                        </div>
+                    </div>
+                    <div class="hours-note">
+                        <p><i class="fas fa-info-circle"></i> Nos produits sont préparés frais chaque jour. Pour garantir la disponibilité de vos produits préférés, nous vous recommandons de passer commande à l'avance.</p>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Où nous trouver</h3>
+                    <div class="map-container">
+                        <!-- Placeholder for a map -->
+                        <div class="map-placeholder">
+                            <img src="images/map.jpg" alt="Carte de localisation">
+                        </div>
+                    </div>
+                    <div class="address">
+                        <p>La boulangerie du P'tit chef</p>
+                        <p>123 Rue Principale</p>
+                        <p>Lachute, QC J8H 1X1</p>
+                        <p>Canada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ce que disent nos clients</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                        <p>Les meilleurs croissants que j'ai jamais goûtés ! Chaque visite est un plaisir, et le personnel est toujours accueillant.</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Marie Tremblay</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                        <p>Le pain au levain est exceptionnel ! Je fais un détour chaque semaine pour m'en procurer. Une vraie boulangerie artisanale comme on les aime.</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Jean Lapointe</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                        <p>J'ai commandé un gâteau d'anniversaire et il était non seulement magnifique mais aussi délicieux ! Toute ma famille a adoré. Merci P'tit chef !</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Sophie Bélanger</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez-nous</h2>
+                <div class="divider"></div>
+                <p>Des questions ou des commandes spéciales ? N'hésitez pas à nous contacter !</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>(450) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@leptitchef.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>123 Rue Principale, Lachute, QC J8H 1X1</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/leptitchef13" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envoyez-nous un message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Abonnez-vous à notre newsletter</h3>
+                    <p>Recevez nos dernières nouvelles, promotions et recettes directement dans votre boîte de réception.</p>
+                </div>
+                <div class="newsletter-form">
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Votre adresse email" required>
+                        <button type="submit" class="btn btn-secondary">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#"><img src="images/logo.jpg" alt="La boulangerie du P'tit chef" class="logo-image"></a>
+                    <p>Des produits artisanaux préparés avec passion depuis 2010.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#products">Nos produits</a></li>
+                        <li><a href="#hours">Horaires</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>Horaires d'ouverture</h4>
+                    <ul>
+                        <li><span>Lun - Dim:</span> Fermé</li>
+                        <li><span>Mar - Ven:</span> 6:00 - 17:00</li>
+                        <li><span>Samedi:</span> 8:00 - 17:00</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Rue Principale, Lachute</li>
+                        <li><i class="fas fa-phone"></i> (450) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@leptitchef.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/leptitchef13" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 La boulangerie du P'tit chef. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
